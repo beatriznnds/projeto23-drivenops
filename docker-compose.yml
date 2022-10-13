@@ -8,7 +8,7 @@ services:
     env_file:
       - back-end/.env
     volumes:
-      - pg_students-db: /var/lib/postgresql/data
+      - pg_students-db:/var/lib/postgresql/data
 
   node_students_app:
     container_name: node_students_app
