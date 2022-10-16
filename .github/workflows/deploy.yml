@@ -3,11 +3,11 @@ on:
     branches:
       - main
 
-name: Build and Deploy
+name: Deploy on AWS
 jobs:
   build:
     runs-on: self-hosted
-    timeout-minutes: 10
+    timeout-minutes: 20
     steps:
       - name: Checkout
         uses: actions/checkout@v3
